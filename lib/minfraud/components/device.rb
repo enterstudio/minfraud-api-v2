@@ -13,15 +13,6 @@ module Minfraud
       # @attribute :accept_language
       # @return [String] The HTTP "Accept-Language" header of the browser used in the transaction
       attr_accessor :accept_language
-
-      # Creates Minfraud::Components::Device instance
-      # @param  [Hash] params hash of parameters
-      # @return [Minfraud::Components::Device] a Device instance
-      def initialize(params = {})
-        @ip_address      = params[:ip_address]
-        @user_agent      = params[:user_agent]
-        @accept_language = params[:accept_language]
-      end
     end
   end
 end
